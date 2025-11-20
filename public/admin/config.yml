@@ -1,0 +1,54 @@
+# Sveltia CMS Configuration
+# https://github.com/sveltia/sveltia-cms
+
+backend:
+  name: github
+  repo: yharby/sveltia-cms-demo
+  branch: main
+
+# Media files storage
+media_folder: static/images
+public_folder: /images
+
+# Collections define the structure for different content types
+collections:
+  # Blog Posts
+  - name: blog
+    label: Blog Posts
+    label_singular: Blog Post
+    folder: content/blog
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Published Date, widget: datetime }
+      - { name: author, label: Author, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: featured_image, label: Featured Image, widget: image, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: body, label: Content, widget: markdown }
+
+  # Pages
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: content/pages
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text, required: false }
+      - { name: body, label: Content, widget: markdown }
+
+  # Settings (File Collection)
+  - name: settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General Settings
+        file: content/settings/general.yml
+        fields:
+          - { name: site_title, label: Site Title, widget: string }
+          - { name: site_description, label: Site Description, widget: text }
+          - { name: site_url, label: Site URL, widget: string }
+          - { name: logo, label: Logo, widget: image, required: false }
