@@ -5,14 +5,13 @@ backend:
   name: github
   repo: yharby/sveltia-cms-demo
   branch: main
-  # No OAuth service - use Personal Access Token instead
 
-# Site URL (for GitHub Pages)
-site_url: https://yharby.github.io/sveltia-cms-demo
+# Site URL (will be updated after Netlify deployment)
+site_url: https://sveltia-cms-demo.netlify.app
 
 # Media files storage
 media_folder: static/images
-public_folder: /sveltia-cms-demo/images  # Note: includes repo name for GitHub Pages
+public_folder: /images
 
 # Collections define the structure for different content types
 collections:
