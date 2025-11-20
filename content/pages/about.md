@@ -1,8 +1,9 @@
 ---
 title: About This Site
-description: Learn more about this Sveltia CMS demo site
+description: |-
+  Learn more about this Sveltia CMS demo site
+  test1
 ---
-
 # About This Site
 
 This is a demonstration of **Sveltia CMS** - a modern, Git-based headless content management system.
