@@ -8,7 +8,6 @@ tags:
   - getting-started
   - sveltia-cms
 ---
-
 # Welcome to Sveltia CMS!
 
 This is your first blog post created with **Sveltia CMS** - a modern, lightweight, Git-based headless content management system.
@@ -48,16 +47,18 @@ Save your changes and they're automatically committed to GitHub!
 
 ### Rich Text Editing
 
-You can use **bold**, *italic*, ~~strikethrough~~, and even `code` in your content.
+You can use **bold**, _italic_, ~~strikethrough~~, and even `code` in your content.
 
 ### Lists
 
 Unordered lists:
+
 - Item 1
 - Item 2
 - Item 3
 
 Ordered lists:
+
 1. First item
 2. Second item
 3. Third item
