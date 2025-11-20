@@ -5,10 +5,8 @@ backend:
   name: github
   repo: yharby/sveltia-cms-demo
   branch: main
-  # For GitHub Pages deployment
-  base_url: https://yharby.github.io
-  # Optional: Use Sveltia's free OAuth service (no setup needed!)
-  # auth_endpoint: https://sveltia-cms-auth.cloudflare.dev
+  # Use Sveltia's free OAuth service (no setup needed!)
+  auth_endpoint: https://sveltia-cms-auth.cloudflare.dev
 
 # Site URL (for GitHub Pages)
 site_url: https://yharby.github.io/sveltia-cms-demo
